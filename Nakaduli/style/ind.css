@@ -1,0 +1,123 @@
+html{scroll-behavior: smooth;}
+body{
+  margin:0;
+  user-select: none;
+}
+.Header{
+  position: sticky;
+  position: -webkit-sticky;
+  top:0;
+  width:100vw;
+  height:10vh;
+  text-align: center;
+  background-color: #eee;
+  z-index: 10;
+}
+.Header a{
+  text-decoration: none;
+  font-size:1.7vw;
+  color:#333;
+  letter-spacing: 3px;
+  display: inline-block;
+  margin:1% 0 0 3%;
+}
+.Header img{
+  position: absolute;
+  border-radius:100%;
+  cursor: pointer;
+  width:5%;
+  height:8vh;
+  left:2vw;
+  top:1vh;
+}
+
+
+#slideshow {
+  width:100%;
+  height:60vh;
+  position: relative;
+}
+#slideshow > div {
+  position: absolute;
+  width:100%;
+  height:60vh;
+  background-color:blue;
+  z-index: -1;
+}
+.hidden {
+  display: none;
+}
+#slideshow img {
+  width:100%;
+  height:60vh;
+}
+.left-arrow,.right-arrow{
+  position:absolute;
+  cursor: pointer;
+  width:5%;
+  height:40vh;
+  top:20vh;
+  opacity:0.4;
+  transition: 1s;
+}
+.right-arrow{
+  top:18vh;
+  right:0;
+  transform: rotate(180deg);
+}
+.left-arrow:hover,.right-arrow:hover{opacity:1;}
+
+#service {
+  margin:5% 0 5% 0;
+}
+#service img{
+  width:50%;
+  height:48vh;
+  float:left;
+}
+
+
+
+
+#Footer{
+  position: fixed;
+  bottom:0;
+  width:100vw;
+  height:25vh;
+  background-color: #1C1C1E;
+  margin:5% 0 0 0;
+  color:#F3F3F3;
+  text-align: center;
+}
+#Footer h2{
+  cursor: pointer;
+  display: inline-block;
+  margin:2% 0 0 0;
+}
+#Footer p {
+  display: inline-block;
+  float:right;
+  margin: 0 1% 0% 0;
+}
+#Footer i{
+  cursor: pointer;
+  font-size: 2.5vw;
+  margin-left: 1%;
+  transition: 1s;
+}
+#fb:hover{
+  color:#0469DE;
+}
+#inst:hover{
+  color:#FE5224;
+}
+#twitter:hover{
+  color:#1C9BEA;
+}
+#Footer h5{
+  margin-left:2%;
+  position: absolute;
+  text-align: left;
+  font-size: 0.8vw;
+  letter-spacing: 4px;
+}
